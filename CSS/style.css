@@ -33,7 +33,9 @@ a {
 li {
   list-style-type: none;
 }
-
+input:focus {
+  outline: none;
+}
 .main-container {
   width: 100%;
   max-width: 1440px;
@@ -107,7 +109,34 @@ li {
   font-size: 16px;
   margin-top: 0;
 }
-
+.formulaire {
+  display: flex;
+  padding: 10px 0 35px;
+}
+.localisation {
+  height: 50px;
+  width: 50px;
+  background-color: var(--main-bg-color);
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+.formulaire-ville {
+  border: 1px solid var(--main-bg-color);
+  font-weight: 500;
+}
+.rechercher {
+  background-color: var(--main-color);
+  border-radius: 0 10px 10px 0;
+  border: none;
+  padding: 10px;
+  color: var(--filter-bg-color);
+  font-weight: 600;
+}
+.rechercher:hover {
+  background-color: var(--filter-bg-color);
+  color: var(--main-color);
+  transition-duration: 0.25s;
+}
 /*** Hebergements And Populaires-Desktop ***/
 .hebergements-and-populaires {
   display: flex;
