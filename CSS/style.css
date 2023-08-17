@@ -80,12 +80,12 @@ input:focus {
 .header-logo {
   width: 80px;
 }
-.header-nav {
+.header-nav ul {
   width: 300px;
   display: flex;
   justify-content: right;
 }
-.header-list {
+.header-nav li {
   flex: 1;
   text-align: center;
 }
@@ -101,17 +101,16 @@ input:focus {
   transition-duration: 0.5s;
 }
 /*** Headline-Recherche--Desktop***/
-.headline-title {
+.headline h1 {
   font-size: 22px;
   margin-bottom: 5px;
 }
-.headline-subtitle {
-  font-size: 16px;
+.headline p {
   margin-top: 0;
 }
 .formulaire {
   display: flex;
-  padding: 10px 0 35px;
+  padding: 10px 0 25px;
 }
 .localisation {
   height: 50px;
@@ -119,6 +118,9 @@ input:focus {
   background-color: var(--main-bg-color);
   border-radius: 10px 0 0 10px;
   border: none;
+}
+.localisation i {
+  color: black;
 }
 .formulaire-ville {
   border: 1px solid var(--main-bg-color);
@@ -136,6 +138,41 @@ input:focus {
   background-color: var(--filter-bg-color);
   color: var(--main-color);
   transition-duration: 0.25s;
+}
+/*** Filtres-info ***/
+.filtres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.filtre-item {
+  width: 162px;
+}
+.filtres button {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid var(--main-bg-color);
+  border-radius: 25px;
+  font-weight: 700;
+}
+.filtres button:hover {
+  background-color: var(--filter-bg-color);
+}
+.filtres button i {
+  margin-right: 10px;
+}
+
+.info-bar {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 10px 0 25px;
+}
+.info-bar i {
+  color: var(--main-color);
 }
 /*** Hebergements And Populaires-Desktop ***/
 .hebergements-and-populaires {
