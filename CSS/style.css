@@ -1,4 +1,4 @@
-/********* General *********/
+/*** General ***/
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -78,25 +78,34 @@ li {
 .header-logo {
   width: 80px;
 }
-.header-nav-list {
+.header-nav {
   width: 300px;
   display: flex;
   justify-content: right;
 }
-.header-nav-list-page {
+.header-list {
   flex: 1;
   text-align: center;
 }
-.header-nav-list-link {
-  font-size: 12px;
+.header-link {
+  font-size: 16px;
   display: block;
   padding-top: 25px;
   border-top: 2px solid white;
 }
-.header-nav-list-link:hover {
+.header-link:hover {
   border-top: 2px solid var(--main-color);
   color: var(--main-color);
   transition-duration: 0.5s;
+}
+/*** Headline-Recherche--Desktop***/
+.headline-title {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.headline-subtitle {
+  font-size: 16px;
+  margin-top: 0;
 }
 
 /*** Hebergements And Populaires-Desktop ***/
