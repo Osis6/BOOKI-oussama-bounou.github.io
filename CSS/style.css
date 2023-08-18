@@ -60,6 +60,11 @@ input:focus {
   padding: 3px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
+.a-card {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
 
 .card img {
   object-fit: cover;
@@ -89,16 +94,18 @@ input:focus {
 .header-nav ul {
   width: 300px;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 }
 .header-nav li {
   flex: 1;
   text-align: center;
+  margin-right: 30px;
 }
 .header-link {
+  width: 150px;
   font-size: 16px;
   display: block;
-  padding-top: 25px;
+  padding-top: 15px;
   border-top: 2px solid white;
 }
 .header-link:hover {
@@ -140,6 +147,7 @@ input:focus {
   padding: 10px;
   color: var(--filter-bg-color);
   font-weight: 600;
+  width: 110px;
 }
 .rechercher:hover {
   background-color: var(--filter-bg-color);
@@ -217,6 +225,7 @@ input:focus {
   flex-direction: column;
   justify-content: space-around;
   box-sizing: border-box;
+  padding-left: 10px;
 }
 .hebergements-cards img {
   width: 100%;
@@ -278,6 +287,61 @@ input:focus {
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
+}
+/*** activites-desktop ***/
+.activites {
+  width: 100%;
+  padding-top: 30px;
+}
+.activites-cards {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+}
+.a-card {
+  width: calc(25% - 30px);
+  object-fit: cover;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+.a-card h3 {
+  padding: 10px;
+  margin: 0;
+}
+.a-card:hover {
+  transform: scale(1.03);
+}
+.activites-cards img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/*** Footer-desktop ***/
+.footer-section {
+  background-color: var(--main-bg-color);
+  margin: auto;
+  display: flex;
+  margin-top: 30px;
+  padding: 30px 0;
+  justify-content: space-between;
+}
+.section-panel {
+  width: 30%;
+}
+.section-panel h2 {
+  margin: 0;
+  font-size: 17px;
+  padding: 15px 0 0 15px;
+}
+.section-panel a {
+  font-size: 12px;
+  display: block;
+  padding: 15px 0 0 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
