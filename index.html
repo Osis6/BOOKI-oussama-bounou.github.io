@@ -19,6 +19,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/tablette.css" />
+    <link rel="stylesheet" href="CSS/mobile.css" />
   </head>
 
   <body>
@@ -52,7 +54,7 @@
         <!--Recherche-->
         <form action="" method="get" class="formulaire">
           <button class="localisation">
-            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-location-dot" style="color: black"></i>
           </button>
           <input
             type="text"
@@ -61,26 +63,31 @@
             class="formulaire-ville"
           />
           <input type="submit" value="Rechercher" class="rechercher" />
+          <button class="loupe">
+            <i class="fa-solid fa-magnifying-glass" style="color: white"></i>
+          </button>
         </form>
         <!--Filtres-info-->
         <div class="filtres">
           <h2>Filtres</h2>
-          <button>
-            <i class="fa-solid fa-money-bill-wave"></i>
-            <p>Économique</p>
-          </button>
-          <button>
-            <i class="fa-solid fa-child"></i>
-            <p>Familial</p>
-          </button>
-          <button>
-            <i class="fa-solid fa-heart"></i>
-            <p>Romantique</p>
-          </button>
-          <button>
-            <i class="fa-solid fa-fire"></i>
-            <p>Nos pépites</p>
-          </button>
+          <div class="filtres-tab">
+            <button>
+              <i class="fa-solid fa-money-bill-wave"></i>
+              <p>Économique</p>
+            </button>
+            <button>
+              <i class="fa-solid fa-child"></i>
+              <p>Familial</p>
+            </button>
+            <button>
+              <i class="fa-solid fa-heart"></i>
+              <p>Romantique</p>
+            </button>
+            <button>
+              <i class="fa-solid fa-fire"></i>
+              <p>Nos pépites</p>
+            </button>
+          </div>
         </div>
         <div class="info-bar">
           <i class="fa-solid fa-info"></i>
@@ -350,6 +357,7 @@
             </div>
           </section>
         </div>
+        <!--Activites-->
         <div id="activite">
           <section class="activites">
             <h2 class="activites-title">Activités à Marseille</h2>
@@ -411,14 +419,14 @@
         <div class="footer-section">
           <div class="section-panel">
             <h2>A propos</h2>
-            <a href="#">Fonctionnement du site</a>
-            <a href="#">Conditions générales</a>
-            <a href="#">Données et confidentialité</a>
+            <a href="#"><nobr>Fonctionnement du site</nobr></a>
+            <a href="#"><nobr>Conditions générales</nobr></a>
+            <a href="#"><nobr>Données et confidentialité</nobr></a>
           </div>
           <div class="section-panel">
-            <h2>Nos hébergements</h2>
+            <h2><nobr>Nos hébergements</nobr></h2>
             <a href="#">Charte qualité</a>
-            <a href="#">Proposer votre hôtel</a>
+            <a href="#"><nobr>Proposer votre hôtel</nobr></a>
           </div>
           <div class="section-panel">
             <h2>Assistance</h2>

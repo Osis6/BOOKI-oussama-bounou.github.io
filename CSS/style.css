@@ -84,7 +84,6 @@ input:focus {
 /*** Header-Desktop ***/
 #header {
   display: flex;
-  margin: auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -99,7 +98,7 @@ input:focus {
 .header-nav li {
   flex: 1;
   text-align: center;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .header-link {
   width: 150px;
@@ -133,9 +132,6 @@ input:focus {
   border-radius: 10px 0 0 10px;
   border: none;
 }
-.localisation i {
-  color: black;
-}
 .formulaire-ville {
   border: 1px solid var(--main-bg-color);
   font-weight: 500;
@@ -154,12 +150,20 @@ input:focus {
   color: var(--main-color);
   transition-duration: 0.25s;
 }
+.loupe {
+  display: none;
+}
 /*** Filtres-info ***/
 .filtres {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 15px;
+}
+.filtres-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
 }
 .filtres button {
   display: flex;
@@ -169,7 +173,7 @@ input:focus {
   border: 2px solid var(--main-bg-color);
   border-radius: 25px;
   font-weight: 700;
-  width: 136px;
+  min-width: 136px;
 }
 .filtres button:hover {
   background-color: var(--filter-bg-color);

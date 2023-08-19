@@ -1,0 +1,30 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  .filtres {
+    display: flex;
+    flex-direction: column;
+  }
+  .hebergements-and-populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hebergements {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .populaires {
+    width: 100%;
+    flex-direction: row;
+  }
+  .populaires-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    width: calc(33.33% - 30px);
+  }
+  .activites-cards img {
+    height: 200px;
+  }
+}
