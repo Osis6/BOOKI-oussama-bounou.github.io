@@ -103,4 +103,7 @@
     flex-direction: column;
     padding: 30px;
   }
+  .section-panel {
+    width: max-content;
+  }
 }
