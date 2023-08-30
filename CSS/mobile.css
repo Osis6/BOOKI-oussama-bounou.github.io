@@ -6,17 +6,15 @@
     flex-direction: column;
   }
   .header-logo {
-    width: 100px;
-    margin: 30px;
+    height: auto;
+    margin: 20px;
   }
-
   .header-nav {
     width: 100%;
   }
   .header-nav ul {
     width: 100%;
     padding: 0;
-    max-width: 767px;
   }
   .header-nav li {
     text-align: center;
@@ -36,10 +34,14 @@
     transition-duration: 0.5s;
   }
   .headline {
-    padding-left: 40px;
+    justify-content: center;
+    padding-left: 20px;
   }
   .formulaire {
     justify-content: center;
+  }
+  .formulaire-ville {
+    width: 60%;
   }
   .rechercher {
     display: none;
@@ -47,15 +49,14 @@
   .filtres {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    gap: 0;
-  }
-  .filtres h2 {
-    padding-left: 40px;
+    padding: 20px;
   }
   .filtres-tab {
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+  }
+  .filtres button {
+    flex: 1 calc(50% - 20px);
   }
   .loupe {
     display: block;
@@ -64,6 +65,7 @@
     background-color: var(--main-color);
     border-radius: 10px;
     border: none;
+    transform: translate(-25%);
   }
   .info-bar {
     justify-content: center;
