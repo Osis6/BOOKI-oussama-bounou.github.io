@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .main-container {
     padding: 0;
   }
@@ -76,6 +76,13 @@
     justify-content: space-between;
   }
   .populaires {
+    width: 100%;
+  }
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
     width: 100%;
   }
   .hebergements {

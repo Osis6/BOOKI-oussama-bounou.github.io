@@ -166,6 +166,7 @@ input:focus {
 }
 .filtres h2 {
   font-size: 16px;
+  margin-right: 15px;
 }
 .filtres button {
   display: flex;
@@ -239,7 +240,7 @@ input:focus {
 }
 .hebergements-cards img {
   width: 100%;
-  height: 136px;
+  max-height: 165px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -352,5 +353,3 @@ input:focus {
   display: block;
   padding: 15px 0 0 15px;
 }
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
